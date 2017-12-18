@@ -1,0 +1,14 @@
+
+{
+  "name": "intercom/intercom-wordpress",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Intercom",
+      "email": "team@intercom.com"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.0.0"
+  }
+}
