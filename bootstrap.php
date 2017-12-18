@@ -496,7 +496,11 @@ function add_intercom_snippet()
     wp_get_current_user()
   );
   $snippet = new IntercomSnippet($snippet_settings);
-  echo $snippet->html();
+
+  // Only show the box if the user is logged in
+  if ( is_user_logged_in() ) {
+      echo $snippet->html();
+  }
 }
 
 function add_intercom_settings_page()
